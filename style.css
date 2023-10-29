@@ -1,0 +1,217 @@
+/* Set the font family for the entire document using 'Open Sans Condensed' and a fallback to sans-serif */
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Center align and style top-level headings */
+h1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    color: black;
+}
+
+/* Style subheadings with increased font weight */
+h2 {
+    font-weight: 700;
+    font-size: 29px;
+    margin: 0;
+    color: black;
+}
+
+/* Define styles for the lightbox overlay */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style the central content box within the lightbox */
+.box {
+    position: absolute;
+    padding: 0 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gold;
+    color: #fff;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the main heading container with a border and centered content */
+.heading {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style subheadings within the .heading container */
+.subheading_two {
+    font-size: medium;
+    font-weight: 520;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+/* Style paragraph text within the .heading container */
+.heading p {
+    font-weight: 500;
+    color: black;
+    text-align: start !important;
+}
+
+/* Style the form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+}
+
+/* Style images to be responsive and have a gold background */
+img {
+    max-width: 100%;
+    height: 100%;
+    background-color: gold;
+    color: gold;
+    border: none;
+    flex: 1;
+}
+
+/* Style text input fields, email input, and buttons */
+input[type="text"],
+input[type="email"],
+button {
+    font-size: 1rem;
+    line-height: 1;
+    width: 38vw;
+    height: 40px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    
+}
+
+/* Style the submit button with adjusted width and background color */
+button {
+    width: 39.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+    color: white;
+    background-color: black;
+}
+
+input[type="checkbox"]{
+    margin-left: 0px;
+
+}
+#check{
+    padding: 5px  0px;
+    margin: 0px;
+    width: 96%;
+
+}
+/* Additional styling for the #subscribe element */
+.subscribe {
+    color: black;
+    font-size: small;
+}
+
+/* Style for the privacy section with full width */
+.privacy {
+    width: 100%;
+}
+
+/* Style paragraphs and links with centered text */
+p, a {
+    text-align: center;
+    font-size: small;
+    margin: 0;
+}
+
+/* Style the close button for the lightbox */
+.close {
+    position: absolute;
+    left: 98%;
+    top: 20px;
+    margin: -10px 0 0 -10px;
+    color: rgba(46, 46, 46, 0.781);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    img {
+      display: none;
+    }
+    .box {
+        margin: 0px;
+        padding: 15px;
+        width: 80vw;
+        height:50vh;
+    }
+    h1{
+        font-size: medium !important;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    input[type="text"], input[type="email"]{
+        font-size: 1rem;
+        line-height: 0.5;
+        width: 95%;
+        height: 35px;
+        margin: 8px;
+        outline: none;
+        border: none;
+    }
+    button{
+        width: 100%;
+    }
+    .heading{
+        font-size: small !important;
+        margin-bottom: 10px;
+    }
+    .subheading_two {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+    }
+    input[type="checkbox"]{
+        margin-left: 0px;
+
+    }
+    #check{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+
+    }
+    .close{
+        left: 95%;
+    }
+  }
